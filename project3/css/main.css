@@ -1,0 +1,211 @@
+header {
+  height: 100vh;
+  background-image: url("../img/f1.jpg");
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+  header .titleBlock {
+    text-align: center;
+    margin: auto; }
+    header .titleBlock h1 {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff; }
+    header .titleBlock p {
+      color: rgba(255, 255, 255, 0.5); }
+    header .titleBlock button {
+      padding: 15px 40px;
+      background-color: yellow;
+      color: #000;
+      border: 1px solid yellow;
+      text-transform: uppercase;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+      transition: all 0.7s;
+      overflow: hidden; }
+      header .titleBlock button:after {
+        content: "";
+        position: absolute;
+        bottom: -160px;
+        left: -40px;
+        width: 120%;
+        height: 230%;
+        background-color: #fff;
+        transition: all 0.5s;
+        z-index: -1;
+        transform: rotateZ(20deg); }
+      header .titleBlock button:hover {
+        color: rgba(0, 0, 0, 0.6); }
+        header .titleBlock button:hover:after {
+          bottom: -30px; }
+
+nav {
+  height: 80px;
+  line-height: 80px;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  nav .logo {
+    float: left; }
+  nav .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    nav .menu li {
+      display: inline-block;
+      padding: 0 25px; }
+      nav .menu li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase; }
+  nav .container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+.advantages_s {
+  padding: 100px 0; }
+  .advantages_s .item {
+    text-align: center;
+    margin-bottom: 30px; }
+    .advantages_s .item i {
+      font-size: 60px;
+      color: yellow; }
+    .advantages_s .item h5 {
+      font-weight: 700;
+      text-transform: uppercase; }
+    .advantages_s .item p {
+      color: rgba(0, 0, 0, 0.6); }
+
+.gallery_s .col-md-3 {
+  padding: 0; }
+.gallery_s .item {
+  position: relative; }
+  .gallery_s .item:hover .overlay {
+    width: 100%; }
+    .gallery_s .item:hover .overlay .descrBlock {
+      opacity: 1; }
+  .gallery_s .item .overlay {
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.7);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; }
+    .gallery_s .item .overlay .descrBlock {
+      opacity: 0;
+      transition: all 0.5s;
+      margin: auto;
+      text-align: center; }
+    .gallery_s .item .overlay h6 {
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .gallery_s .item .overlay p {
+      font-size: 12px;
+      color: #000; }
+
+.employees_s {
+  padding: 100px 0; }
+  .employees_s .item img {
+    transition: all 0.5s; }
+  .employees_s .item h6 {
+    font-size: 18px;
+    margin: 30px 0 15px 0; }
+  .employees_s .item span {
+    color: yellow;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 2px 3px; }
+  .employees_s .item .soc_btns a {
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3); }
+  .employees_s .item:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px 4px rgba(0, 0, 0, 0.5); }
+
+.download_s {
+  padding-bottom: 100px; }
+  .download_s .downloadBlock {
+    text-align: center; }
+    .download_s .downloadBlock h5 {
+      font-size: 20px; }
+    .download_s .downloadBlock p {
+      font-weight: 700;
+      text-transform: uppercase; }
+    .download_s .downloadBlock button {
+      padding: 15px 50px;
+      background-color: yellow;
+      color: #000;
+      border: 1px solid yellow;
+      text-transform: uppercase;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+      transition: all 0.7s;
+      overflow: hidden; }
+      .download_s .downloadBlock button:after {
+        content: "";
+        position: absolute;
+        bottom: -160px;
+        left: -40px;
+        width: 120%;
+        height: 230%;
+        background-color: #fff;
+        transition: all 0.5s;
+        z-index: -1;
+        transform: rotateZ(20deg); }
+      .download_s .downloadBlock button:hover {
+        color: rgba(0, 0, 0, 0.6); }
+        .download_s .downloadBlock button:hover:after {
+          bottom: -30px; }
+
+footer .topFooter {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 0;
+  color: #fff; }
+  footer .topFooter h6 {
+    text-transform: uppercase;
+    font-weight: 700; }
+  footer .topFooter p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px; }
+  footer .topFooter .col-md-4 {
+    text-align: center; }
+  footer .topFooter .soc_btns a {
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #fff;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #fff; }
+footer .bottomFooter {
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.9); }
+  footer .bottomFooter p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2); }
+
+h1 {
+  color: red; }
+
+/*# sourceMappingURL=main.css.map */

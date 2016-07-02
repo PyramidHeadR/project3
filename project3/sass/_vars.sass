@@ -1,0 +1,39 @@
+$main_color: yellow
+$dark_color: #30334d
+
+
+=btn($p)
+	padding: $p
+	background-color: $main_color
+	color: #000
+	border: 1px solid $main_color
+	text-transform: uppercase
+	font-weight: 700
+	position: relative
+	z-index: 1
+	transition: all .7s
+	overflow: hidden
+	&:after
+		content: ''
+		position: absolute
+		bottom: -160px
+		left: -40px
+		width: 120%
+		height: 230%
+		background-color: #fff
+		transition: all .5s
+		z-index: -1
+		transform: rotateZ(20deg)
+	&:hover
+		color: rgba(#000,.6)
+		&:after
+			bottom: -30px
+=soc_btn($color)
+	display: inline-block
+	margin: 0 5px
+	border: 1px solid $color
+	height: 30px
+	line-height: 30px
+	width: 30px
+	text-align: center
+	color: $color

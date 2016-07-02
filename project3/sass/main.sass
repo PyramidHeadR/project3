@@ -1,0 +1,160 @@
+@import vars
+header
+	height: 100vh
+	background-image: url("../img/f1.jpg")
+	position: relative
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	.titleBlock
+		text-align: center
+		margin: auto
+		h1
+			text-transform: uppercase
+			font-weight: 700
+			color: #fff
+		p
+			color: transparentize(#fff, .5)
+		button
+			+btn(15px 40px)
+
+
+nav
+	height: 80px
+	line-height: 80px
+	text-align: right
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	.logo
+		float: left
+	.menu
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li
+			display: inline-block
+			padding: 0 25px
+			a
+				text-decoration: none
+				color: #fff
+				text-transform: uppercase
+	.container
+		border-bottom: 1px solid transparentize(#fff, .8)					
+
+.advantages_s
+	padding: 100px 0
+	.item
+		text-align: center
+		margin-bottom: 30px
+		i
+			font-size: 60px
+			color: $main_color
+		h5
+			font-weight: 700
+			text-transform: uppercase
+		p
+			color: transparentize(#000, .4)	
+.gallery_s
+	.col-md-3
+		padding: 0
+	.item
+		position: relative
+		&:hover
+			.overlay
+				width: 100%
+				.descrBlock
+					opacity: 1		
+		.overlay
+			transition: all .5s
+			position: absolute
+			top: 0
+			left: 0
+			width: 0
+			height: 100%
+			background-color: transparentize($main_color, .3)
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			.descrBlock
+				opacity: 0
+				transition: all .5s
+				margin: auto
+				text-align: center
+			h6
+				color: #000
+				text-transform: uppercase
+				font-weight: 700
+			p
+				font-size: 12px
+				color: #000
+
+
+.employees_s
+	padding: 100px 0
+	.item
+		img
+			transition: all .5s
+		h6
+			font-size: 18px
+			margin: 30px 0 15px 0
+		span
+			color: $main_color
+			font-size: 12px	
+			background-color: rgba(#000,.7)
+			border-radius: 5px
+			padding: 2px 3px
+		.soc_btns
+			a
+				+soc_btn(transparentize(#000, .7))
+		&:hover
+			img
+				transform: scale(1.1)
+				box-shadow: 0 0 25px 4px transparentize(#000, .5)	
+
+
+.download_s
+	padding-bottom: 100px
+	.downloadBlock
+		text-align: center
+		h5
+			font-size: 20px
+		p
+			font-weight: 700
+			text-transform: uppercase
+		button
+			+btn(15px 50px)	
+
+
+footer
+	.topFooter
+		background-color: rgba(#000,.7)
+		padding: 50px 0
+		color: #fff
+		h6
+			text-transform: uppercase
+			font-weight: 700
+		p
+			color: transparentize(#fff, .5)
+			font-size: 12px
+		.col-md-4
+			text-align: center
+		.soc_btns
+			a
+				+soc_btn(#fff)	
+	.bottomFooter
+		padding: 20px 0
+		background-color: rgba(#000,.9)
+		p
+			text-align: center
+			color: transparentize(#fff, .8)
+
+
+
+h1
+	color: red
